@@ -8,9 +8,8 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		List<Student> studlist = new ArrayList<Student>();
-		studlist.add(new Student(1,"Hong",21));
+		studlist.add(new Student(1,"Hong",21)); // making 10 student information
 		Student s1 = new Student(10,"Kim",23);
 		studlist.add(s1);
 		studlist.add(new Student(17,"Lee",22));
@@ -23,7 +22,7 @@ public class Main {
 		studlist.add(new Student(98,"Byong",26));
 		studlist.add(new Student(102,"Cha",22));
 		
-		Collections.sort(studlist);
+		Collections.sort(studlist); // sort, print 10 names
 		for (Student s: studlist) {
 			System.out.println(s.toString());
 		}
