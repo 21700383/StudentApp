@@ -13,7 +13,7 @@ public class Student implements Comparable<Student> {
 
 	public String toString() {
 		// TODO Auto-generated method stub
-		return no + "-" + name + " (" + age + ")";
+		return "Student [no=" + no + ", name=" + name + ", " + age + "]";
 	}
 	
 	@Override

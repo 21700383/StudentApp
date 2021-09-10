@@ -22,7 +22,14 @@ public class Main {
 		studlist.add(new Student(98,"Byong",26));
 		studlist.add(new Student(102,"Cha",22));
 		
+		System.out.println("Student list (ordered by name)");
 		Collections.sort(studlist); // sort, print 10 names
+		for (Student s: studlist) {
+			System.out.println(s.toString());
+		}
+		
+		System.out.println("Student list (reverse ordered by name)");
+		Collections.sort(studlist, Collections.reverseOrder());
 		for (Student s: studlist) {
 			System.out.println(s.toString());
 		}
